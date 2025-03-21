@@ -1,0 +1,59 @@
+{
+    "6": {
+      "inputs": {
+        "image": "freepik__background__39476.png"
+      },
+      "class_type": "LoadImage",
+      "_meta": {
+        "title": "Load Image"
+      }
+    },
+    "7": {
+      "inputs": {
+        "filename_prefix": "ComfyUI",
+        "images": [
+          "8",
+          4
+        ]
+      },
+      "class_type": "SaveImage",
+      "_meta": {
+        "title": "Save Image"
+      }
+    },
+    "8": {
+      "inputs": {
+        "llm_provider": "gemini",
+        "llm_model": "gemini-2.0-flash-exp",
+        "base_ip": "localhost",
+        "port": "11434",
+        "user_prompt": "woman wear this jewelry",
+        "strategy": "gemini2_create",
+        "profiles": "None",
+        "embellish_prompt": "None",
+        "style_prompt": "None",
+        "neg_prompt": "None",
+        "stop_string": "None",
+        "max_tokens": 2048,
+        "random": false,
+        "seed": 1222,
+        "keep_alive": true,
+        "clear_history": true,
+        "history_steps": 10,
+        "aspect_ratio": "1:1",
+        "auto": false,
+        "batch_count": 1,
+        "external_api_key": "",
+        "attention": "sdpa",
+        "Store Auto Prompt": null,
+        "images": [
+          "6",
+          0
+        ]
+      },
+      "class_type": "IF_LLM",
+      "_meta": {
+        "title": "IF LLM🎨"
+      }
+    }
+  }
